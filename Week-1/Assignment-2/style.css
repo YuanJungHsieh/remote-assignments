@@ -23,10 +23,11 @@ h2,
 .content {
   text-align: center;
   vertical-align: top;
-  width: 35%;
+  width: 45%;
   background-color: SlateGrey;
-  margin: 5px 5px;
+  margin: 10px 10px;
   padding-bottom: 40px;
+  max-width:595px;
 }
 .welcome {
   background-color: AliceBlue;
@@ -37,9 +38,4 @@ button {
   padding: 20px;
   border: none;
   background-color: AliceBlue;
-}
-@media screen and(min-width=1200px) {
-  .box {
-    width: 1200px;
-  }
 }
