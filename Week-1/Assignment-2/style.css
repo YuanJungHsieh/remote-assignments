@@ -19,15 +19,16 @@ h2,
   justify-content: center;
   display: flex;
   flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
 }
 .content {
   text-align: center;
   vertical-align: top;
   width: 45%;
   background-color: SlateGrey;
-  margin: 10px 10px;
+  margin: 5px 5px;
   padding-bottom: 40px;
-  max-width: 595px;
 }
 .welcome {
   background-color: AliceBlue;
