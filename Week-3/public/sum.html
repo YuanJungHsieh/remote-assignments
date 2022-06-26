@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sum</title>
+  </head>
+
+  <body>
+    <h1>
+      Please enter a number, the web will return the value that added from 1 to
+      it.
+    </h1>
+    <div>
+      <input type="text" id="number" name="number" />
+      <button id="check-btn" onclick="getSum()">submit</button>
+    </div>
+    <div><h2>result</h2></div>
+    <div id="sum_resp"></div>
+
+    <script>
+      function getSum() {
+        let input = document.getElementById("number").value;
+
+        var xhr = new XMLHttpRequest();
+        xhr.onreadystatechange = function () {
+          if (this.readyState == 4 && this.status == 200) {
+            document.getElementById("sum_resp").innerHTML = this.responseText;
+          }
+        };
+        xhr.open("GET", "./data?number=" + input);
+        xhr.send();
+      }
+    </script>
+  </body>
+</html>
