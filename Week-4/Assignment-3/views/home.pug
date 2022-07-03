@@ -1,0 +1,15 @@
+body
+    h1 Sign in here!
+    form(action = '/sign-in', method = 'get')
+        label(for = 'sign-in-email')  Entry your email
+            input(type = 'text', name = 'email', id = 'sign-in-email')
+        label(for = 'sign-in-pw')  Entry your password
+            input(type='password', name = 'password', id = 'sign-in-pw')
+        button(type = 'submit') Submit
+    h1 Sign up here!
+    form(action = '/sign-up', method = 'get')
+        label(for = 'sign-up-email')  Set up accout by email address
+            input(type = 'text', name = 'email', id = 'sign-up-email') 
+        label(for = 'sign-up-pw')  Set up your password
+            input(type='password', name = 'sign-up-pw')
+        button(type = 'submit') Submit
