@@ -1,0 +1,31 @@
+head 
+    style
+      include style.css
+body
+    div(class="welcome")
+        h1 Welcome to this page 
+        p feel free to sign up or sign in 
+        div(class="sign in")
+            h2 Sign in
+            form(action = '/sign-in', method = 'post')
+                label Enter your email
+                    input(type = 'email', name = 'email', required)
+                br
+                br
+                label(for = 'sign-in-pw')  Enter your password
+                    input(type='password', name = 'password', required)
+                br
+                br
+                button(type = 'submit') Login!
+        div(class="sign up")
+            h2 Sign up
+            form(action = '/sign-up', method = 'post', required)
+                label Create the accout by email address
+                    input(type = 'email' name = 'email' ) 
+                br
+                br
+                label Set up the password
+                    input(type='password' name = 'password' required)
+                br
+                br
+                button(type = 'submit') Create an account!
